@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倒放语音助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>倒放语音</h1>
+        
+        <div class="status-display" id="statusText">准备就绪</div>
+
+        <div class="controls">
+            <!-- 录制按钮 -->
+            <button id="recordBtn" class="btn btn-record">
+                <span class="icon">🎤</span>
+                <span class="text">开始录音</span>
+            </button>
+
+            <!-- 播放原声按钮 -->
+            <button id="playBtn" class="btn btn-play" disabled>
+                <span class="icon">▶️</span>
+                <span class="text">播放原声</span>
+            </button>
+
+            <!-- 倒放按钮 -->
+            <button id="reverseBtn" class="btn btn-reverse" disabled>
+                <span class="icon">◀️</span>
+                <span class="text">倒放声音</span>
+            </button>
+        </div>
+        
+        <div class="visualizer-container">
+            <canvas id="visualizer"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
